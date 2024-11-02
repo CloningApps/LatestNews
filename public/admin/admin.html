@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Latest News Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#users">Users</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total Articles</h3>
+                    <p>42</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Published Articles</h3>
+                    <p>38</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Draft Articles</h3>
+                    <p>4</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Categories</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+        <section id="articles">
+            <h2>Articles</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Global Summit Addresses Climate Change</td>
+                        <td>World</td>
+                        <td>2023-05-15</td>
+                        <td>Published</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Revolutionary AI Breakthrough Announced</td>
+                        <td>Technology</td>
+                        <td>2023-05-14</td>
+                        <td>Draft</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="add-btn">Add New Article</button>
+        </section>
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul class="category-list">
+                <li>World <button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></li>
+                <li>Technology <button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></li>
+                <li>Sports <button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></li>
+            </ul>
+            <button class="add-btn">Add New Category</button>
+        </section>
+        <section id="users">
+            <h2>Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>admin</td>
+                        <td>admin@example.com</td>
+                        <td>Administrator</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>editor</td>
+                        <td>editor@example.com</td>
+                        <td>Editor</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="add-btn">Add New User</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Latest News Admin Panel. All rights reserved.</p>
+    </footer>
+</body>
+  </html>
